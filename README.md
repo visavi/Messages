@@ -16,7 +16,7 @@ composer require parishop/messages:~1.0
     {
         return array_merge(
             parent::templateExtensions(), array(
-                new \Parishop\Messages($this->builder->context()->httpContext()),
+                new \Parishop\Messages($this->builder->context()),
             )
         );
     }
